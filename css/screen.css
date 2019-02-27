@@ -395,9 +395,6 @@ p {
 
 }
 
-
-
-
 input[type=submit]:hover {
   background-color: slategray;
 }
@@ -412,15 +409,13 @@ input[type=submit]:hover {
   body {
     background-color: gray;
     text-align: center;
-    font-size:.75em;
+    font-size: .75em;
   }
+
   ol {
     width: 100%;
     margin: auto;
-    
-
   }
-
 
   input[type=email] {
     width: 100%;
@@ -430,158 +425,158 @@ input[type=submit]:hover {
     border-radius: 4px;
     box-sizing: border-box;
     font-size: .80em;
-
   }
+
   input[type=submit] {
     width: 100%;
     background-color: dimgray;
     color: black;
-    padding: 14px 20px;
+    padding: .875em 1.250em;
+    /*14px 20px*/
     margin: 8px 0px;
+    /*0.5em*/
     border: none;
     border-radius: 4px;
     cursor: pointer;
   }
 
-}
-p{
-  font-size:1.0em;
-  line-height: 1.0em;
-}
-
-/*medium-screens*/
-
-@media screen and (min-width: 768px) {
-  body {
-    background-color: black;
-    text-align: center;
-    font-size:.75em;
-    line-height:.90em
-  }
-  form {
-    width: 80%;
-    margin: auto;
-  }
-  ol {
-    width: 95%;
-    margin: auto;
-    font-size:.85em;
-
-  }
-  #input-email {
-    width: 70%;
-    display: inline-block;
+  p {
+    font-size: 1.0em;
+    /*12px*/
+    line-height: 1.0em;
+    /*12px*/
   }
 
-  label[for=email] {
-    display: inline-block;
-    text-align: left;
+  /*medium-screens*/
+  @media screen and (min-width: 768px) {
+    body {
+      background-color: black;
+      text-align: center;
+      font-size: .75em;
+      /*2.96em*/
+      line-height: .90em;
+      /*3.6em*/
+    }
+
+    form {
+      width: 80%;
+      margin: auto;
+    }
+
+    ol {
+      width: 95%;
+      margin: auto;
+      font-size: .85em;
+      /*3.4px*/
+    }
+
+    #input-email {
+      width: 70%;
+      display: inline-block;
+    }
+
+    label[for=email] {
+      display: inline-block;
+      text-align: left;
+    }
+
+    #email {
+      width: 80%;
+      display: inline-block;
+
+    }
+
+    #input-age-verification {
+      width: 80%;
+      display: inline-block;
+      padding-bottom: .65em;
+      /*2.6px*/
+    }
+
+    label[for=age-verification] {
+      display: inline-block;
+      width: 86%
+    }
+
+    #age-verification {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    input[type=submit] {
+      width: 30%;
+      background-color: dimgray;
+      color: black;
+      margin: 8px 0px;
+      border: none;
+      border-radius: 2px;
+      cursor: pointer;
+    }
   }
 
-  #email {
-    width: 80%;
-    display: inline-block;
+  /*big-screens*/
+  @media screen and (min-width: 992px) {
+    body {
+      background-color: dimgray;
+      text-align: center;
+      font-size: 1.2em;
+      /*16px*/
+      line-height: 1.2em;
+      /*16px*/
+    }
 
-  }
+    form {
+      width: 60%;
+      margin: auto;
+    }
 
-  #input-age-verification {
-    width: 80%;
-    display: inline-block;
-    padding-bottom: .65em;
-    /*10px*/
-  }
-  #age-verification{
-  text-align: right;
-    margin-right:0px;
-  }
-  
+    ol {
+      width: 70%;
+      margin: auto;
+    }
 
-  label[for=age-verification] {
-    display: inline-block;
-    width: 86%
-  }
+    #input-email {
+      width: 60%;
+      display: inline-block;
+    }
 
-  #age-verification {
-    display: inline-block;
-    vertical-align: bottom;
-  }
-  input[type=submit] {
-    width: 30%;
-    background-color: dimgray;
-    color: black;
-    margin: 8px 0px;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-  }
-}
+    label[for=email] {
+      display: inline-block;
+    }
 
-/*big-screens*/
+    input[type=email] {
+      width: 50%;
+      margin: 2em 0em;
+      /*8px 0px*/
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: .80em;
+      /*3.2px*/
+    }
 
-@media screen and (min-width: 992px) {
-  body {
-    background-color: dimgray;
-    text-align: center;
-    font-size: 1.2em;
-    /*16px*/
-    line-height: 1.2em;
-    /*16px*/
-  }
-  form {
-    width: 60%;
-    margin: auto;
-  }
+    #input-age-verification {
+      width: 90%;
+    }
 
-  ol {
-    width: 70%;
-    margin: auto;
+    #age-verification {
+      display: inline-block;
+      vertical-align: middle;
+    }
 
-  }
-  #input-email {
-    width: 60%;
-    display: inline-block;
-  }
-
-  label[for=email] {
-    display: inline-block;
-  }
-  input[type=email] {
-    width: 50%;
-    margin: 8px 0px;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: .80em;
-
-  }
-
-  #input-age-verification {
-    width: 90%;
-    text-align: center;
-  }
-  #age-verification{
-  float:left;
-    clear:right;
-    margin:0;
-  }
-  
-  
-
-
-  input[type=submit] {
-    width: 25%;
-    background-color: dimgray;
-    color: black;
-    text-align: center;
-    margin: 8px 0px;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
+    input[type=submit] {
+      width: 25%;
+      background-color: dimgray;
+      color: black;
+      text-align: center;
+      margin: 2em 0em;
+      /*8px 0px*/
+      border: none;
+      border-radius: 2px;
+      cursor: pointer;
+    }
   }
 
 
-}
-
-
-/* ===== STATE STYLES ======= */
+  /* ===== STATE STYLES ======= */
