@@ -395,14 +395,11 @@ p {
 
 }
 
-input[type=submit] {
-  width: 100%;
-}
 
 
 
 input[type=submit]:hover {
-  background-color: dimgrey;
+  background-color: slategray;
 }
 
 /* ===== LAYOUT STYLES ====== */
@@ -414,30 +411,52 @@ input[type=submit]:hover {
 @media only screen and (min-width: 480px) {
   body {
     background-color: gray;
+    text-align: center;
+    font-size:.75em;
   }
   ol {
     width: 100%;
     margin: auto;
-    text-align: left;
+    
+
   }
-  #input-email {
+
+
+  input[type=email] {
     width: 100%;
+    margin: 8px 0px;
     display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: .80em;
+
   }
-  #input-submit {
-    width: 90%;
-    margin: auto;
+  input[type=submit] {
+    width: 100%;
+    background-color: dimgray;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
   }
-  p {
-    font-size: .65em;/*10px*/
-  }
+
+}
+p{
+  font-size:1.0em;
+  line-height: 1.0em;
 }
 
 /*medium-screens*/
 
 @media screen and (min-width: 768px) {
   body {
-    background-color: dimgray;
+    background-color: black;
+    text-align: center;
+    font-size:.75em;
+    line-height:.90em
   }
   form {
     width: 80%;
@@ -446,7 +465,8 @@ input[type=submit]:hover {
   ol {
     width: 95%;
     margin: auto;
-    text-align: center;
+    font-size:.85em;
+
   }
   #input-email {
     width: 70%;
@@ -454,13 +474,6 @@ input[type=submit]:hover {
   }
 
   label[for=email] {
-    display: inline-block;
-    text-align: left;
-  }
-
-  label[for=email] {
-    padding-top: 0.809em;
-    padding-bottom: 0.809em;
     display: inline-block;
     text-align: left;
   }
@@ -473,15 +486,18 @@ input[type=submit]:hover {
 
   #input-age-verification {
     width: 80%;
-    float: right;
     display: inline-block;
-    text-align: left;
-    padding-bottom:.65em;/*10px*/
+    padding-bottom: .65em;
+    /*10px*/
   }
+  #age-verification{
+  text-align: right;
+    margin-right:0px;
+  }
+  
 
   label[for=age-verification] {
     display: inline-block;
-    text-align: left;
     width: 86%
   }
 
@@ -489,16 +505,14 @@ input[type=submit]:hover {
     display: inline-block;
     vertical-align: bottom;
   }
-  #input-submit {
-    width: 50%;
-    margin: auto;
-
-  }
-
-
-  p {
-    font-size: .80em;/*13px*/
-    line-height: 1.0em;/*16px*/
+  input[type=submit] {
+    width: 30%;
+    background-color: dimgray;
+    color: black;
+    margin: 8px 0px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
   }
 }
 
@@ -506,16 +520,22 @@ input[type=submit]:hover {
 
 @media screen and (min-width: 992px) {
   body {
-    background-color: slategrey;
+    background-color: dimgray;
+    text-align: center;
+    font-size: 1.2em;
+    /*16px*/
+    line-height: 1.2em;
+    /*16px*/
   }
   form {
     width: 60%;
     margin: auto;
   }
+
   ol {
     width: 70%;
     margin: auto;
-    text-align: center;
+
   }
   #input-email {
     width: 60%;
@@ -525,48 +545,42 @@ input[type=submit]:hover {
   label[for=email] {
     display: inline-block;
   }
-
-
-
-  #email {
-    width: 80%;
+  input[type=email] {
+    width: 50%;
+    margin: 8px 0px;
     display: inline-block;
-}
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: .80em;
 
-#input-age-verification {
-  width: 100%;
-  float: right;
-  display: inline-block;
-  padding-bottom:0.625em;/*10px*/
-}
+  }
 
-label[for=age-verification] {
-  width: 86%;
-  display: inline-block;
-  text-align: left;
+  #input-age-verification {
+    width: 90%;
+    text-align: center;
+  }
+  #age-verification{
+  float:left;
+    clear:right;
+    margin:0;
+  }
   
-}
-
-#age-verification {
-  display: inline-block;
-  vertical-align: center;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 0.0em;
-  margin-right: 0.6em;
-}
-
-#input-submit {
-  width: 30%;
-  margin: auto;
-
-}
+  
 
 
-p {
-  font-size: 1.0em;/*16px*/
-  line-height: 1.0em;/*16px*/
-}
+  input[type=submit] {
+    width: 25%;
+    background-color: dimgray;
+    color: black;
+    text-align: center;
+    margin: 8px 0px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+
 }
 
 
